@@ -5,12 +5,13 @@
     {%- assign page_paths = site.minima.nav_pages | default: default_paths -%}
     {%- assign page_titles = site.pages | map: 'title' | compact %}
     <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
-    <a href="https://hendrix-cs.github.io/csci340/">CSCI 340 Homepage</a>
+   
     
 
     {%- unless page_titles == empty %}
    
       <nav class="site-nav">
+        <a href="https://hendrix-cs.github.io/csci340/">CSCI 340 Homepage</a>
         <input type="checkbox" id="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon"></span>
